@@ -12,7 +12,6 @@ Patch0:		xemacs-forms-pkg-info.patch
 URL:		http://www.xemacs.org/
 BuildArch:	noarch
 Requires:	xemacs
-Prereq:		/usr/sbin/fix-info-dir
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 Conflicts:	xemacs-sumo
 
@@ -42,10 +41,10 @@ gzip -9nf $RPM_BUILD_ROOT%{_infodir}/*.info* \
 rm -fr $RPM_BUILD_ROOT
 
 %post
-%{_sbindir}/fix-info-dir -c %{_infodir} >/dev/null 2>&1
+[ -x /usr/sbin/fix-info-dir ] && /usr/sbin/fix-info-dir -c %{_infodir} >/dev/null 2>&1
 
 %postun
-%{_sbindir}/fix-info-dir -c %{_infodir} >/dev/null 2>&1
+[ -x /usr/sbin/fix-info-dir ] && /usr/sbin/fix-info-dir -c %{_infodir} >/dev/null 2>&1
 
 %files
 %defattr(644,root,root,755)
