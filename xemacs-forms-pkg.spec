@@ -1,14 +1,15 @@
-Summary:	Forms editing support (obsolete, use Widget instead).
-Summary(pl):	Forms editing support (obsolete, use Widget instead).
+Summary:	Forms editing support (obsolete, use Widget instead)
+Summary(pl):	Wsparcie do edycji formularzy (stare, u¿yj Widget zamiast tego)
 Name:		xemacs-forms-pkg
 %define 	srcname	forms
 Version:	1.13
 Release:	1
 License:	GPL
 Group:		Applications/Editors/Emacs
+Group(de):	Applikationen/Editors/Emacs
 Group(pl):	Aplikacje/Edytory/Emacs
 Source0:	ftp://ftp.xemacs.org/xemacs/packages/%{srcname}-%{version}-pkg.tar.gz
-Patch0:		xemacs-forms-pkg-info.patch
+Patch0:		%{name}-info.patch
 URL:		http://www.xemacs.org/
 BuildArch:	noarch
 Requires:	xemacs
@@ -34,8 +35,7 @@ cp -a * $RPM_BUILD_ROOT%{_datadir}/xemacs-packages
 mv -f  $RPM_BUILD_ROOT%{_datadir}/xemacs-packages/info/*.info* $RPM_BUILD_ROOT%{_infodir}
 rm -fr $RPM_BUILD_ROOT%{_datadir}/xemacs-packages/info
 
-gzip -9nf $RPM_BUILD_ROOT%{_infodir}/*.info* \
-	lisp/forms/ChangeLog 
+gzip -9nf lisp/forms/ChangeLog 
 
 %clean
 rm -fr $RPM_BUILD_ROOT
