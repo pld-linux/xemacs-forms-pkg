@@ -10,10 +10,11 @@ Source0:	ftp://ftp.xemacs.org/xemacs/packages/%{srcname}-%{version}-pkg.tar.gz
 # Source0-md5:	5f5cc842399040018bab20f776cf1cf8
 Patch0:		%{name}-info.patch
 URL:		http://www.xemacs.org/
-BuildArch:	noarch
+BuildRequires:	texinfo
 Requires:	xemacs
-BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 Conflicts:	xemacs-sumo
+BuildArch:	noarch
+BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 Forms editing support (obsolete, use Widget instead).
@@ -51,7 +52,7 @@ rm -fr $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc lisp/forms/ChangeLog
-%{_datadir}/xemacs-packages%{_sysconfdir}/*
-%{_infodir}/*
+%{_datadir}/xemacs-packages/etc/*
 %dir %{_datadir}/xemacs-packages/lisp/*
 %{_datadir}/xemacs-packages/lisp/*/*.el*
+%{_infodir}/*.info*
