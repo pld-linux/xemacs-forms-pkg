@@ -2,12 +2,18 @@ Summary:	Forms editing support (obsolete, use Widget instead)
 Summary(pl):	Wsparcie do edycji formularzy (stare, uøyj Widget zamiast tego)
 Name:		xemacs-forms-pkg
 %define 	srcname	forms
-Version:	1.13
+Version:	1.14
 Release:	1
 License:	GPL
 Group:		Applications/Editors/Emacs
-Group(de):	Applikationen/Editors/Emacs
+Group(cs):	Aplikace/Editory/Emacs
+Group(de):	Anwendungen/Editoren/Emacs
+Group(es):	Aplicaciones/Editores/Emacs
+Group(fr):	Applications/Editeurs/Emacs
+Group(ja):	•¢•◊•Í•±°º•∑•Á•Û/•®•«•£•ø/Emacs
 Group(pl):	Aplikacje/Edytory/Emacs
+Group(pt):	AplicaÁıes/Editores/Emacs
+Group(ru):	“…Ãœ÷≈Œ…—/Ú≈ƒ¡À‘œ“Ÿ/Emacs
 Source0:	ftp://ftp.xemacs.org/xemacs/packages/%{srcname}-%{version}-pkg.tar.gz
 Patch0:		%{name}-info.patch
 URL:		http://www.xemacs.org/
@@ -17,8 +23,10 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 Conflicts:	xemacs-sumo
 
 %description
+Forms editing support (obsolete, use Widget instead).
 
 %description -l pl 
+Wsparcie do edycji formularzy (stare, uøyj Widget zamiast tego).
 
 %prep
 %setup -q -c
