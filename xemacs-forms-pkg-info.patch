@@ -1,0 +1,35 @@
+diff -Nur xemacs-forms-pkg-1.12/man/forms/forms.texi xemacs-forms-pkg-1.12.new/man/forms/forms.texi
+--- xemacs-forms-pkg-1.12/man/forms/forms.texi	Mon Jun 15 08:15:07 1998
++++ xemacs-forms-pkg-1.12.new/man/forms/forms.texi	Sun Mar 26 15:04:38 2000
+@@ -4,7 +4,7 @@
+ @c !Id: forms.texinfo,v 1.1 1994/04/05 07:43:19 jwz Exp !
+ 
+ @comment %**start of header (This is for running Texinfo on a region.)
+-@setfilename ../info/forms.info
++@setfilename ../../info/forms.info
+ @settitle Forms Mode User's Manual
+ @syncodeindex vr cp
+ @syncodeindex fn cp
+@@ -16,9 +16,20 @@
+ @c      @smallbook
+ @comment %**end of header (This is for running Texinfo on a region.)
+ 
++
++@ifinfo
++@format
++@dircategory XEmacs Editor:
++@direntry
++* Forms: (forms).                       Mode for working with simple textual data bases in a
++			                forms-oriented manner
++@end direntry
++@end format
++@end ifinfo
++
++
++
+ @direntry
+-* Forms::               Mode for working with simple textual data bases in a
+-			forms-oriented manner
+ @end direntry
+ @ifinfo
+ This file documents Forms mode, a form-editing major mode for GNU Emacs.
