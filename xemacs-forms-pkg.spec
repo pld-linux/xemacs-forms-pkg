@@ -17,7 +17,7 @@ Conflicts:	xemacs-sumo
 %description
 Forms editing support (obsolete, use Widget instead).
 
-%description -l pl 
+%description -l pl
 Wsparcie do edycji formularzy (stare, u¿yj Widget zamiast tego).
 
 %prep
@@ -35,7 +35,7 @@ cp -a * $RPM_BUILD_ROOT%{_datadir}/xemacs-packages
 mv -f  $RPM_BUILD_ROOT%{_datadir}/xemacs-packages/info/*.info* $RPM_BUILD_ROOT%{_infodir}
 rm -fr $RPM_BUILD_ROOT%{_datadir}/xemacs-packages/info
 
-gzip -9nf lisp/forms/ChangeLog 
+gzip -9nf lisp/forms/ChangeLog
 
 %clean
 rm -fr $RPM_BUILD_ROOT
@@ -48,7 +48,7 @@ rm -fr $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc lisp/forms/ChangeLog.gz 
+%doc lisp/forms/ChangeLog.gz
 %{_datadir}/xemacs-packages%{_sysconfdir}/*
 %{_infodir}/*
 %dir %{_datadir}/xemacs-packages/lisp/*
