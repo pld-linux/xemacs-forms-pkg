@@ -2,12 +2,12 @@ Summary:	Forms editing support (obsolete, use Widget instead)
 Summary(pl):	Wsparcie do edycji formularzy (stare, u¿yj Widget zamiast tego)
 Name:		xemacs-forms-pkg
 %define 	srcname	forms
-Version:	1.14
+Version:	1.15
 Release:	1
 License:	GPL
 Group:		Applications/Editors/Emacs
 Source0:	ftp://ftp.xemacs.org/xemacs/packages/%{srcname}-%{version}-pkg.tar.gz
-# Source0-md5:	c6530292a349a0c567311502c2038270
+# Source0-md5:	5f5cc842399040018bab20f776cf1cf8
 Patch0:		%{name}-info.patch
 URL:		http://www.xemacs.org/
 BuildArch:	noarch
