@@ -13,14 +13,12 @@ URL:		http://www.xemacs.org/
 BuildArch:	noarch
 Requires:	xemacs
 Prereq:		/usr/sbin/fix-info-dir
-BuildRoot:	/tmp/%{name}-%{version}-root
+BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 Conflicts:	xemacs-sumo
 
 %description
 
-
 %description -l pl 
-
 
 %prep
 %setup -q -c
