@@ -2,7 +2,7 @@ Summary:	Forms editing support (obsolete, use Widget instead).
 Summary(pl):	Forms editing support (obsolete, use Widget instead).
 Name:		xemacs-forms-pkg
 %define 	srcname	forms
-Version:	1.12
+Version:	1.13
 Release:	1
 License:	GPL
 Group:		Applications/Editors/Emacs
