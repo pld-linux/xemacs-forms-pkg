@@ -1,5 +1,5 @@
 Summary:	Forms editing support (obsolete, use Widget instead)
-Summary(pl.UTF-8):   Wsparcie do edycji formularzy (przestarzałe, lepiej używać Widget)
+Summary(pl.UTF-8):	Wsparcie do edycji formularzy (przestarzałe, lepiej używać Widget)
 Name:		xemacs-forms-pkg
 %define 	srcname	forms
 Version:	1.15
