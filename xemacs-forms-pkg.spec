@@ -1,5 +1,5 @@
 Summary:	Forms editing support (obsolete, use Widget instead)
-Summary(pl):	Wsparcie do edycji formularzy (przestarza³e, lepiej u¿ywaæ Widget)
+Summary(pl.UTF-8):   Wsparcie do edycji formularzy (przestarzaÅ‚e, lepiej uÅ¼ywaÄ‡ Widget)
 Name:		xemacs-forms-pkg
 %define 	srcname	forms
 Version:	1.15
@@ -19,9 +19,9 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 Forms editing support (obsolete, use Widget instead).
 
-%description -l pl
-Wsparcie do edycji formularzy (przestarza³e, zamiast tego lepiej
-u¿ywaæ Widget).
+%description -l pl.UTF-8
+Wsparcie do edycji formularzy (przestarzaÅ‚e, zamiast tego lepiej
+uÅ¼ywaÄ‡ Widget).
 
 %prep
 %setup -q -c
