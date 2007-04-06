@@ -6,7 +6,7 @@ Version:	1.15
 Release:	2
 License:	GPL
 Group:		Applications/Editors/Emacs
-Source0:	ftp://ftp.xemacs.org/xemacs/packages/%{srcname}-%{version}-pkg.tar.gz
+Source0:	http://ftp.xemacs.org/xemacs/packages/%{srcname}-%{version}-pkg.tar.gz
 # Source0-md5:	5f5cc842399040018bab20f776cf1cf8
 Patch0:		%{name}-info.patch
 URL:		http://www.xemacs.org/
