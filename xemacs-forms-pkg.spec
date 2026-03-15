@@ -3,7 +3,7 @@ Summary(pl.UTF-8):	Wsparcie do edycji formularzy (przestarzałe, lepiej używać
 Name:		xemacs-forms-pkg
 %define 	srcname	forms
 Version:	1.15
-Release:	3
+Release:	4
 License:	GPL
 Group:		Applications/Editors/Emacs
 Source0:	http://ftp.xemacs.org/pub/xemacs/packages/%{srcname}-%{version}-pkg.tar.gz
